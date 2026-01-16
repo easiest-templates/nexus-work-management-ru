@@ -20,7 +20,7 @@ export function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-3xl"
+      className="fixed top-4 left-0 right-0 mx-auto z-50 w-[calc(100%-2rem)] max-w-3xl"
     >
       <nav
         ref={navRef}

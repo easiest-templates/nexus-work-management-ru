@@ -9,17 +9,19 @@ import { Footer } from "@/components/footer"
 
 export default function Index() {
   return (
-    <SmoothScroll>
-      <main className="min-h-screen bg-zinc-950">
-        <div className="noise-overlay" aria-hidden="true" />
-        <Navbar />
-        <Hero />
+    <>
+      <Navbar />
+      <SmoothScroll>
+        <main className="min-h-screen bg-zinc-950">
+          <div className="noise-overlay" aria-hidden="true" />
+          <Hero />
         <LogoMarquee />
         <BentoGrid />
         <Pricing />
         <FinalCTA />
         <Footer />
-      </main>
-    </SmoothScroll>
+        </main>
+      </SmoothScroll>
+    </>
   )
 }
